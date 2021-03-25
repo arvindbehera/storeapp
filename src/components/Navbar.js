@@ -23,7 +23,7 @@ const Nav = () => {
         </div>
         <ul className='nav-links'>
           {links.map((link) => {
-            const { id, text, url } = Link;
+            const { id, text, url } = link;
             return (
               <li key={id}>
                 <Link to={url}> {text}</Link>

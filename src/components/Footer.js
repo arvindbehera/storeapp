@@ -5,9 +5,12 @@ const Footer = () => {
     <Wrapper>
       <h5>
         &copy; {new Date().getFullYear()}
-        <span> The Comfort Store </span>
+        <span> The Comfort Store </span> All Right Reserve
+        <br /> Developed by{' '}
+        <a className='webapp' href='http://kswebapp.com/' target='_blank'>
+          KS WEB-APP
+        </a>
       </h5>
-      <h5> All Right Reserve</h5>
     </Wrapper>
   );
 };
@@ -31,6 +34,11 @@ const Wrapper = styled.footer`
     text-transform: none;
     line-height: 1.25;
   }
+
+  .webapp {
+    color: Cyan;
+  }
+
   @media (min-width: 776px) {
     flex-direction: row;
   }
