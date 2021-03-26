@@ -7,15 +7,12 @@ import { FilterProvider } from './context/filter_context';
 import { CartProvider } from './context/cart_context';
 import { UserProvider } from './context/user_context';
 import { Auth0Provider } from '@auth0/auth0-react';
-import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <HashRouter>
-    <ProductsProvider>
-      <FilterProvider>
-        <App />
-      </FilterProvider>
-    </ProductsProvider>
-  </HashRouter>,
+  <ProductsProvider>
+    <FilterProvider>
+      <App />
+    </FilterProvider>
+  </ProductsProvider>,
   document.getElementById('root')
 );
